@@ -1,0 +1,56 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: fixed;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image:url("music.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr); 
+    gap: 20px;
+    max-width: 600px;
+    padding: 20px;
+}
+.key {
+    background-color: #020202;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.key:active {
+    background-color: #666;
+}
+kbd {
+    font-size: 36px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+}
+.sound {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #bbb;
+}
+audio {
+    display: none;
+}
